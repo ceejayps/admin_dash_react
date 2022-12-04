@@ -1,4 +1,4 @@
-import './App.css';
+import './sideBar.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Dashboard from './pages/Dashboard'
@@ -7,11 +7,13 @@ import Users from './pages/Users'
 import Transactions from './pages/Transactions'
 import Products from './pages/Products'
 import SideBar from './components/SideBar';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <BrowserRouter>
     <SideBar>
+    <NavBar/>
     <Routes>
       <Route path="/" element={<Dashboard/>}  />
       <Route path="/dashboard" element={<Dashboard/>}  />
