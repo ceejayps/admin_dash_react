@@ -1,4 +1,5 @@
 import './sideBar.css';
+import './navBar.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Dashboard from './pages/Dashboard'
