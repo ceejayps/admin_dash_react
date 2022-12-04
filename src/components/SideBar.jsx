@@ -43,21 +43,21 @@ const SideBar = ({children}) => {
     },
   ];
   return (
-    <div className="container">
+    <div className="Container">
      
         <div style={{width: isOpen? '150px' : '50px'}} className="sidebar">
           <div  className="topSection" onClick={toggle}>
             <h1 style={{display: isOpen? 'block' : 'none'}} className="logo">LOGO</h1>
-            <div style={{marginLeft: isOpen? '40px' : '-5px'}} className="bars">
+            <div style={{marginLeft: isOpen? '40px' : '-5px' }} className="bars">
               <FaBars/>
             </div>
           </div>
           <div className="navItems">
           <div >
           {menuItems.map((item, index) => (
-            <NavLink to={item.path} key={index} className="links" activeclassName='active'>
+            <NavLink to={item.path} key={index} style={{ justifyContent: isOpen? "left":"center" }} className="links" activeclassName='active'>
               <div className="icon">{item.icon}</div>
-              <div style={{display: isOpen? 'block' : 'none'}} className="link_text">{item.name}</div>
+              <div style={{display: isOpen? 'block' : 'none', justifyContent: isOpen? "center" : "left"}} className="link_text">{item.name}</div>
             </NavLink>
           ))}
 
