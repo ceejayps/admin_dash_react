@@ -48,7 +48,7 @@ const SideBar = ({children}) => {
         <div style={{width: isOpen? '150px' : '50px'}} className="sidebar">
           <div  className="topSection" onClick={toggle}>
             <h1 style={{display: isOpen? 'block' : 'none'}} className="logo">LOGO</h1>
-            <div style={{marginLeft: isOpen? '20px' : '-5px'}} className="bars">
+            <div style={{marginLeft: isOpen? '40px' : '-5px'}} className="bars">
               <FaBars/>
             </div>
           </div>
