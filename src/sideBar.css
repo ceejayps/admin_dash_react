@@ -3,11 +3,15 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  
+  
 }
-.container{display: flex;}
+.Container{display: flex; background-color: #1e1f2a;}
 main{
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .sidebar{
   background-color: #24252a;
@@ -37,6 +41,7 @@ main{
   gap: 15px;
   padding: 10px 15px;
   align-items: center;
+  
   transition: all 0.5s;
   margin-left: 3px;
   margin-right: 3px;
