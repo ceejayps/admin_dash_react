@@ -47,13 +47,33 @@
 }
 .offset5px{padding-left: 5px;}
 
-.navInput{ color:rgba(245, 245, 245, 0.496); display: flex; gap:10px; align-items: center; width: 300px; height: 35px; border-radius: 6px; padding:15px;}
 .navInput:hover{background: rgba(245, 245, 245, 0.053);}
 
-.navInputField{
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 250px;
+
+@media (min-width: 769px) {
+    .navInputField{
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 250px;
+    }
+    .navInput{ color:rgba(245, 245, 245, 0.496); display: flex; gap:10px; align-items: center; width: 300px; height: 35px; border-radius: 6px; padding:15px;}
+
+}
+
+@media (max-width: 768px) {
+    .navInput{ color:rgba(245, 245, 245, 0.496); display: flex; gap:10px; align-items: center; width: 200px; height: 35px; border-radius: 6px; padding:15px;}
+
+    .navInputField{
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 130px;
+    }
+    .navRight{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
