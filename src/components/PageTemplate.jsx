@@ -15,174 +15,73 @@ function PageTemplate(props) {
            
         </div>
         <hr class="rounded"/>
-        <div className="App">
-            <div className="tableScrole">
+        
+        <div className="tableScrole">
       <table className='dataTable'>
         <tr>
         {props.tableFields.map((item, index) => (
             <th>{item}</th>
           ))}
         </tr>
+        {props.tableFields.map((item, index) => (
+             <tr>
+             <td className='usersData'>
+              
+               <img height={'40px'} width={'40px'} src="image.jpg">
+                </img>  <span class="feedTxt">Aron Brown</span>
+               
+               
+               </td>
+             <td>software dev</td>
+             <td>Jamaica</td>
+             <td>active</td>
+             <td>72%</td>
+             <td>employe</td>
+             <td>actions</td>
+           </tr>
+          ))}
+          {props.tableFields.map((item, index) => (
+             <tr>
+             <td className='usersData'>
+              
+               <img height={'40px'} width={'40px'} src="image.jpg">
+                </img>  <span class="feedTxt">Aron Brown</span>
+               
+               
+               </td>
+             <td>software dev</td>
+             <td>Jamaica</td>
+             <td>active</td>
+             <td>72%</td>
+             <td>employe</td>
+             <td>actions</td>
+           </tr>
+          ))}
+          {props.tableFields.map((item, index) => (
+             <tr>
+             <td className='usersData'>
+              
+               <img height={'40px'} width={'40px'} src="image.jpg">
+                </img>  <span class="feedTxt">Aron Brown</span>
+               
+               
+               </td>
+             <td>software dev</td>
+             <td>Jamaica</td>
+             <td>active</td>
+             <td>72%</td>
+             <td>employe</td>
+             <td>actions</td>
+           </tr>
+          ))}
       
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>software dev</td>
-          <td>Jamaica</td>
-          <td>active</td>
-          <td>72%</td>
-          <td>employe</td>
-          <td>actions</td>
-        </tr>
        
+        
        
       </table>
       </div>
     </div>
-    </div>
+    
   )
 }
 
