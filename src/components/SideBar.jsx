@@ -55,7 +55,7 @@ const SideBar = ({children}) => {
           <div className="navItems">
           <div >
           {menuItems.map((item, index) => (
-            <NavLink to={item.path} key={index} style={{ justifyContent: isOpen? "left":"center" }} className="links" activeclassName='active'>
+            <NavLink to={item.path} key={index} style={{ justifyContent: isOpen? "left":"center" }} className="links">
               <div className="icon">{item.icon}</div>
               <div style={{display: isOpen? 'block' : 'none', justifyContent: isOpen? "center" : "left"}} className="link_text">{item.name}</div>
             </NavLink>
