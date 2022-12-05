@@ -16,6 +16,7 @@ function PageTemplate(props) {
         </div>
         <hr class="rounded"/>
         <div className="App">
+            <div className="tableScrole">
       <table className='dataTable'>
         <tr>
         {props.tableFields.map((item, index) => (
@@ -25,7 +26,6 @@ function PageTemplate(props) {
       
         <tr>
           <td>Anom</td>
-
           <td>software dev</td>
           <td>Jamaica</td>
           <td>active</td>
@@ -34,152 +34,153 @@ function PageTemplate(props) {
           <td>actions</td>
         </tr>
         <tr>
-          <td>Megha</td>
-          <td>19</td>
-          <td>Female</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Anom</td>
+          <td>software dev</td>
+          <td>Jamaica</td>
+          <td>active</td>
+          <td>72%</td>
+          <td>employe</td>
+          <td>actions</td>
         </tr>
        
+       
       </table>
+      </div>
     </div>
     </div>
   )
