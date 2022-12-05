@@ -1,8 +1,9 @@
 import React from 'react'
+import PageTemplate from '../components/PageTemplate'
 
 const Admins = () => {
   return (
-    <div>Admins</div>
+    <PageTemplate/>
   )
 }
 
