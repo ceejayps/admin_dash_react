@@ -3,8 +3,111 @@
     padding: 20px;
     width: 100%;
     height: calc(100% - 90px);
-    overflow-y: scroll;
+    overflow: hidden;
+   overflow-y: hidden;
     overflow-x: hidden;
     background-color: #24252a;
     border-radius: 10px;
 }
+
+.pageTitle{
+font-size: 28px;
+color: rgba(245, 245, 245, 0.501);
+text-transform: capitalize;
+font-weight: 500;
+letter-spacing: 0.05em;
+}
+hr.rounded {
+    border-top: 4px solid #1e1f2a;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+.pageButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    color: whitesmoke;
+    background: #0088a9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.pageButtonIcon{
+    height: 20px;
+    width: 20px;
+}
+.headSection{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+th{
+font-size: 30;
+font-weight: 200;
+text-transform: uppercase;
+text-align: left;
+color: whitesmoke;
+height: 70px;
+background-color: #1e1f2a;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th{
+    position: sticky;
+    top: 0;
+  }
+
+.dataTable{
+    width: 100%;
+    border-radius: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #0088a9;
+    height: 10px; overflow:scroll;
+    
+}
+tr:hover {background-color: coral;}
+
+
+
+
+/* sm */
+@media (min-width: 640px) {
+    .sm\:my-0 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .md\:my-0 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    .lg\:my-0 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+/* xl */
+@media (min-width: 1280px) {
+    .xl\:rounded-lg {
+        border-radius: 0.5rem/* 8px */;
+    }
+}
+
