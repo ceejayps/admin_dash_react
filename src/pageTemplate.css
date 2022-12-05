@@ -8,6 +8,8 @@
     overflow-x: hidden;
     background-color: #24252a;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .pageTitle{
@@ -31,7 +33,7 @@ hr.rounded {
     height: 40px;
     width: 150px;
     color: whitesmoke;
-    background: #0088a9;
+    background: #2b66ff;
     border-radius: 5px;
     padding: 10px;
 }
@@ -57,13 +59,14 @@ text-transform: uppercase;
 text-align: left;
 color: whitesmoke;
 height: 70px;
-background-color: #1e1f2a;
+background-color: #323436;
 }
 
-th, td {
+ td {
     padding: 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    background: transparent left center no-repeat;
+    line-height: 20px;
     
   }
 
@@ -76,6 +79,22 @@ th, td {
   th{
     position: sticky;
     top: 0;
+    padding: 15px;
+    text-align: left;
+
+  }
+
+  .usersData>img{
+    line-height: 20px;
+    background: url('') left center no-repeat;
+    height: 40px;
+    width: 40px;
+
+  }
+  .usersData{
+    display: flex;
+    gap: 10px;
+    align-items: center;
   }
 
 .dataTable{
@@ -88,21 +107,24 @@ th, td {
 
 .tableScrole{
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border: 0px solid #0088a9;
-    height: 650px; overflow:scroll;
+    border-radius: 10px;
+    border: 1px solid #2d2f30;
+    height: 100%; overflow:scroll;
+    flex-grow: 1;
+    max-height: 750px;
     
 }
 tr:hover {
-    background-color: #0088a9;
+    background-color: #2d2f30;
     color: whitesmoke;
   
   
   
   };
 
-
+.tdNameSec{
+   display: inline;
+}
 
 
 /* sm */
