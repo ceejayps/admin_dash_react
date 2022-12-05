@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  overflow-y: hidden;
-    overflow-x: hidden;
+  
+
   
   
+}
+
+html{
+  overflow: hidden;
 }
 .Container{display: flex; background-color: #1e1f2a;}
 main{
@@ -14,6 +18,7 @@ main{
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  
 }
 .sidebar{
   background-color: #24252a;
