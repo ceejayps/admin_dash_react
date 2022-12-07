@@ -66,7 +66,7 @@ background-color: #323436;
     padding: 15px;
     text-align: left;
     background: transparent left center no-repeat;
-    line-height: 20px;
+ 
     
   }
 
@@ -87,8 +87,8 @@ background-color: #323436;
   .usersData>img{
     line-height: 20px;
     background: url('') left center no-repeat;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 
   }
   .usersData{
