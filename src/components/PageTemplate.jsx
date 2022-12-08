@@ -29,13 +29,12 @@ function PageTemplate(props) {
               
                <img height={'50px'} width={'50px'} src={props.data[index].image}/>
                   <span class="feedTxt">{props.data[index].firstName +" "+props.data[index].lastName}</span>
-               
-               
                </td>
+               <td>{props.data[index].company.name}</td>
              <td>{props.data[index].company.title}</td>
              <td>{props.data[index].address.city+", "+props.data[index].address.state}</td>
-             <td>active</td>
-             <td>72%</td>
+             <td>{props.data[index].gender}</td>
+             <td>{props.data[index].age}</td>
              <td>employe</td>
              <td>actions</td>
            </tr>
