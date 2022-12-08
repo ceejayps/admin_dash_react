@@ -4,7 +4,7 @@ import { FaIcons } from 'react-icons/fa';
 import PageTemplate from '../components/PageTemplate';
 
 const Products=()=> {
-  const [Users, setUsers] = useState([]);
+  const [products, setProducts] = useState([]);
   const [limit, setLimit] = useState(10);
   const [total, setTotal] = useState(0);
   const [skip, setSkip] = useState(0);
@@ -25,7 +25,7 @@ const Products=()=> {
     fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
       .then((response) => response.json())
       .then((data) => {
-        setUsers(data.users);
+        setProducts(data.products);
         setTotal(data.total);
         
       });
@@ -46,32 +46,30 @@ const Products=()=> {
 
   const tableFields = [
     "ID",
-    "Name",
-    "company",
-    "department",
-    "country",
-    "gender",
-    "age",
-    "position",
+    "Title",
+    "Brand",
+    "description",
+    "price",
+    "category",
+    "discount%",
     "actions",
   ];
-  const list = Users.map((item, index) => (       
+  const list = products.map((item, index) => (       
     <tr key={index}>
       <td>{item.id}</td>
       <td className="usersData">
-        <img src={item.image} />
+        <img src={item.thumbnail} />
         <span className="feedTxt">
-          {item.firstName + " " + item.lastName}
+          {item.title}
         </span>
       </td>
-      <td>{item.company.name}</td>
-      <td>{item.company.department}</td>
+      <td>{item.brand}</td>
+      <td>{item.description}</td>
       <td>
-        {item.address.city + ", " + item.address.state}
+        {item.price}
       </td>
-      <td>{item.gender}</td>
-      <td>{item.age}</td>
-      <td>{item.company.title}</td>
+      <td>{item.category}</td>
+      <td>{item.discountPercentage}%</td>
       <td> </td>
     </tr>
   ))
