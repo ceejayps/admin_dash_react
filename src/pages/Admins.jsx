@@ -53,7 +53,7 @@ console.log(Users)
 
 
 
-  const tableFields = ["Name", "company", "position", "country", "gender",'age', "role","actions"]
+  const tableFields = ["Name", "company", "department", "country", "gender",'age', "position","actions"]
 
 
 
