@@ -36,10 +36,13 @@ const Products=()=> {
   const elements = []
   for (let index = 0; index < numOfPages; index++) {
     elements.push(index)
-    setPagesCount(numOfPages)
+    
+  }
+  setPagesCount(numOfPages)
     setPages(elements)
     setPagesCount(numOfPages)
-  }},[total, limit, skip])
+
+},[total, limit, skip])
 
   const pageName = "Product"
   const pageIcon = <FaIcons className="pageButtonIcon" />
