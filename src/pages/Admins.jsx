@@ -1,8 +1,24 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import PageTemplate from '../components/PageTemplate'
 import { BsAlarm, BsPersonPlus } from 'react-icons/bs'
 
+
+
+
+
 const Admins = () => {
+  const [Users, setUsers] = useState([])
+
+  useEffect(() => {
+    // GET request using fetch inside useEffect React hook
+    fetch('https://dummyjson.com/users?limit=50')
+        .then(response => response.json())
+        .then(data => setUsers(data.users));
+
+// empty dependency array means this effect will only run once (like componentDidMount in classes)
+}, []);
+
+console.log(Users)
   const currentUsers = [{
     firstName: "Bob",
     lastName: "Adler"
@@ -34,12 +50,15 @@ const Admins = () => {
   console.log(sortedUsers);
 
 
+
+
+
   const tableFields = ["Name", "position", "country", "status",'portfolio', "role",""]
 
 
 
   return (
-    <PageTemplate tableFields={tableFields} pageName = {"Admin"} icon ={<BsPersonPlus className='pageButtonIcon'/>}/>
+    <PageTemplate tableFields={tableFields} pageName = {"Admin"} data={Users} icon ={<BsPersonPlus className='pageButtonIcon'/>}/>
   )
 }
 
