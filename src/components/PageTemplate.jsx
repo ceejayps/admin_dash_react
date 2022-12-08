@@ -46,6 +46,10 @@ function PageTemplate(props) {
         
        
       </table>
+      
+      </div>
+      <div className="bottomBar">
+        
       </div>
     </div>
     
