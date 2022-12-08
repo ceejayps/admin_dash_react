@@ -10,6 +10,7 @@ import Transactions from './pages/Transactions'
 import Products from './pages/Products'
 import SideBar from './components/SideBar';
 import NavBar from './components/NavBar';
+import Post from './pages/Post';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard/>}  />
       <Route path="/admins" element={<Admins/>}  />
       <Route path="/users" element={<Users/>}  />
-      <Route path="/transactions" element={<Transactions/>}  />
+      <Route path="/post" element={<Post/>}  />
       <Route path="/products" element={<Products/>}  />
     </Routes>
     </SideBar>
