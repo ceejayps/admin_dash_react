@@ -32,8 +32,8 @@ const SideBar = ({children}) => {
       icon: <FaUser />,
     },
     {
-      path: "/transactions",
-      name: "Transactions",
+      path: "/post",
+      name: "Post",
       icon: <FaDollarSign />,
     },
     {
