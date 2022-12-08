@@ -22,7 +22,7 @@ const Products=()=> {
 
   useEffect(() => {
     // GET request using fetch inside useEffect React hook
-    fetch(`https://dummyjson.com/users?limit=${limit}&skip=${skip}`)
+    fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
       .then((response) => response.json())
       .then((data) => {
         setUsers(data.users);
