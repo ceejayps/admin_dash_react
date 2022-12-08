@@ -23,57 +23,25 @@ function PageTemplate(props) {
             <th>{item}</th>
           ))}
         </tr>
-        {props.tableFields.map((item, index) => (
+        {props.data.map((item, index) => (
              <tr>
              <td className='usersData'>
               
-               <img height={'40px'} width={'40px'} src="image.jpg">
-                </img>  <span class="feedTxt">Aron Brown</span>
+               <img height={'50px'} width={'50px'} src={props.data[index].image}/>
+                  <span class="feedTxt">{props.data[index].firstName +" "+props.data[index].lastName}</span>
                
                
                </td>
-             <td>software dev</td>
-             <td>Jamaica</td>
+             <td>{props.data[index].company.title}</td>
+             <td>{props.data[index].address.city+", "+props.data[index].address.state}</td>
              <td>active</td>
              <td>72%</td>
              <td>employe</td>
              <td>actions</td>
            </tr>
           ))}
-          {props.tableFields.map((item, index) => (
-             <tr>
-             <td className='usersData'>
-              
-               <img height={'40px'} width={'40px'} src="image.jpg">
-                </img>  <span class="feedTxt">Aron Brown</span>
-               
-               
-               </td>
-             <td>software dev</td>
-             <td>Jamaica</td>
-             <td>active</td>
-             <td>72%</td>
-             <td>employe</td>
-             <td>actions</td>
-           </tr>
-          ))}
-          {props.tableFields.map((item, index) => (
-             <tr>
-             <td className='usersData'>
-              
-               <img height={'40px'} width={'40px'} src="image.jpg">
-                </img>  <span class="feedTxt">Aron Brown</span>
-               
-               
-               </td>
-             <td>software dev</td>
-             <td>Jamaica</td>
-             <td>active</td>
-             <td>72%</td>
-             <td>employe</td>
-             <td>actions</td>
-           </tr>
-          ))}
+          
+        
       
        
         
