@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import PageTemplate from "../components/PageTemplate";
 import { BsAlarm, BsPersonPlus } from "react-icons/bs";
 
 const Admins = () => {
