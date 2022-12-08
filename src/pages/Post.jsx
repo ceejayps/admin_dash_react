@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
+import { FaDollarSign } from 'react-icons/fa';
+import PageTemplate from '../components/PageTemplate';
+
 
 const Post = () => {
-    const [products, setProducts] = useState([]);
+    const [posts, setPosts] = useState([]);
     const [limit, setLimit] = useState(10);
     const [total, setTotal] = useState(0);
     const [skip, setSkip] = useState(0);
@@ -19,10 +22,10 @@ const Post = () => {
   
     useEffect(() => {
       // GET request using fetch inside useEffect React hook
-      fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
+      fetch(`https://dummyjson.com/posts?limit=${limit}&skip=${skip}`)
         .then((response) => response.json())
         .then((data) => {
-          setProducts(data.products);
+          setPosts(data.posts);
           setTotal(data.total);
           
         });
@@ -41,35 +44,33 @@ const Post = () => {
   
   },[total, limit, skip])
   
-    const pageName = "Product"
-    const pageIcon = <FaIcons className="pageButtonIcon" />
+    const pageName = "Post"
+    const pageIcon = <FaDollarSign className="pageButtonIcon" />
   
     const tableFields = [
       "ID",
       "Title",
-      "Brand",
-      "description",
-      "price",
-      "category",
-      "discount%",
-      "actions",
+      "Body",
+      "UserId",
+      "Reactions",
+     "tags"
     ];
-    const list = products.map((item, index) => (       
+    const list = posts.map((item, index) => (       
       <tr key={index}>
         <td>{item.id}</td>
         <td className="usersData">
-          <img src={item.thumbnail} />
           <span className="feedTxt">
             {item.title}
           </span>
         </td>
-        <td>{item.brand}</td>
-        <td>{item.description}</td>
+        <td>{item.body}</td>
+        <td>{item.userId}</td>
         <td>
-          {item.price}
+          {item.reactions}
         </td>
-        <td>{item.category}</td>
-        <td>{item.discountPercentage}%</td>
+        <td>
+          {item.tags.join(', ')}
+        </td>
         <td> </td>
       </tr>
     ))
