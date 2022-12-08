@@ -68,7 +68,11 @@ text-align: left;
 }
 
  td {
-    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+padding-right: 15px;
+
     text-align: left;
     background: transparent left center no-repeat;
  
@@ -85,8 +89,8 @@ text-align: left;
   .usersData>img{
     line-height: 20px;
     background: url('') left center no-repeat;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 
   }
   .usersData{
@@ -103,7 +107,8 @@ text-align: left;
 
 .tableScrole{
     width: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border: 1px solid #2d2f30;
     height: 100%; overflow:scroll;
     flex-grow: 1;
@@ -122,6 +127,7 @@ tr:hover {
 }
 
 .bottomBar{
+    z-index: 999999;
     height: 50px;
     position: sticky;
     bottom: 0;
@@ -131,8 +137,37 @@ tr:hover {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 1px solid #2d2f30;
-    background-color: #323436;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    color: whitesmoke;
+}
+.bottomBarLeft{
+    display: flex;
+    
+    gap: 5px;
+    align-items: center;
+}
+
+.dropdown{
+    background: transparent;
+    text-align: right;
+    color: whitesmoke;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+option{
+    background: none;
+    border: 0 ;
+}
+.bottomBarRight{
+    z-index: 999999;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 /* sm */
