@@ -35,10 +35,12 @@ const Users = () => {
   const elements = []
   for (let index = 0; index < numOfPages; index++) {
     elements.push(index)
-    setPagesCount(numOfPages)
-    setPages(elements)
-    setPagesCount(numOfPages)
-  }},[total, limit, skip])
+  }
+  setPagesCount(numOfPages)
+  setPages(elements)
+  setPagesCount(numOfPages)
+
+},[total, limit, skip])
 
   const pageName = "User"
   const pageIcon = <BsPerson className="pageButtonIcon" />
