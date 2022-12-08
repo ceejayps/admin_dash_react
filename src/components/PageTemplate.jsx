@@ -31,12 +31,12 @@ function PageTemplate(props) {
                   <span class="feedTxt">{props.data[index].firstName +" "+props.data[index].lastName}</span>
                </td>
                <td>{props.data[index].company.name}</td>
-             <td>{props.data[index].company.title}</td>
+             <td>{props.data[index].company.department}</td>
              <td>{props.data[index].address.city+", "+props.data[index].address.state}</td>
              <td>{props.data[index].gender}</td>
              <td>{props.data[index].age}</td>
-             <td>employe</td>
-             <td>actions</td>
+             <td>{props.data[index].company.title}</td>
+             <td> </td>
            </tr>
           ))}
           
