@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from 'react'
-import { FaDollarSign } from 'react-icons/fa';
+import { FaChartArea, FaDollarSign, FaEnvelopeOpenText, FaSms } from 'react-icons/fa';
 import PageTemplate from '../components/PageTemplate';
 
 
@@ -45,7 +45,7 @@ const Post = () => {
   },[total, limit, skip])
   
     const pageName = "Post"
-    const pageIcon = <FaDollarSign className="pageButtonIcon" />
+    const pageIcon = <FaEnvelopeOpenText className="pageButtonIcon" />
   
     const tableFields = [
       "ID",
@@ -53,7 +53,8 @@ const Post = () => {
       "Body",
       "UserId",
       "Reactions",
-     "tags"
+     "tags",
+     "Actions"
     ];
     const list = posts.map((item, index) => (       
       <tr key={index}>
