@@ -3,6 +3,7 @@ import {
   FaBars,
   FaCog,
   FaDollarSign,
+  FaEnvelopeOpenText,
   FaIcons,
   FaTh,
   FaTools,
@@ -34,7 +35,7 @@ const SideBar = ({children}) => {
     {
       path: "/post",
       name: "Post",
-      icon: <FaDollarSign />,
+      icon: <FaEnvelopeOpenText />,
     },
     {
       path: "/products",
