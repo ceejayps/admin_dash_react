@@ -2,7 +2,8 @@ import React,{useEffect, useState} from 'react'
 import { BsPersonPlus } from 'react-icons/bs'
 import { BiLineChartDown, BiLineChart } from 'react-icons/bi'
 import DashboardCard from '../components/DashboardCard'
-<BiLineChartDown/>
+import '../dashboard.css'
+
 
 const Dashboard = () => {
  
@@ -22,8 +23,11 @@ const Dashboard = () => {
       </div>
     </div>
     <hr className="rounded"/>
-   <div>
+   <div className='cardsection'>
     
+   <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={!true} data={[]}/>
+   <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={!true} data={[]}/>
+   <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={!true} data={[]}/>
    <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={!true} data={[]}/>
 
    </div>
