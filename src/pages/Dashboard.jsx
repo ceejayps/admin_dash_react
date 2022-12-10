@@ -24,12 +24,19 @@ const Dashboard = () => {
     </div>
     <hr className="rounded"/>
    <div className='cardsection'>
-    
    <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={true} data={[]}/>
    <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={!true} data={[]}/>
    <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={!true} data={[]}/>
    <DashboardCard title={"Users"} current={"72,345"} previous={"71,233"} isBearish ={!true} data={[]}/>
+   </div>
 
+   <div className="dasboardBody">
+    <div className='dasboardBodyLeft dasboardBodyCard'>
+
+    </div>
+    <div className='dasboardBodyRight dasboardBodyCard'>
+
+    </div>
    </div>
  
   </div>
