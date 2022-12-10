@@ -1,0 +1,13 @@
+.cardsection{display: flex;
+    gap:10px;
+
+
+}
+
+.dashbaordCard{display: flex;
+    gap:10px;
+    background-color: #2d2f30;
+    border-radius: 10px;
+  transition: all 0.5;
+
+}
