@@ -3,7 +3,7 @@ import { BiLineChartDown, BiLineChart } from 'react-icons/bi'
 const DashboardCard = ({title, current, previous, isBearish, data}) => {
     const icon = isBearish? <BiLineChart/>:<BiLineChartDown/>
   return (
-    <div>
+    <div className='dashbaordCard'>
     <div className='dashCardleft'>
     <p>Tatal{title}</p>
     <p>{current}</p>
