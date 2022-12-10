@@ -1,13 +1,49 @@
 .cardsection{display: flex;
-    gap:10px;
+    gap:20px;
+    width: 100%;
 
 
 }
 
 .dashbaordCard{display: flex;
-    gap:10px;
+    flex-grow: calc(1);
+    color: whitesmoke;
+    padding: 20px;
     background-color: #2d2f30;
     border-radius: 10px;
-  transition: all 0.5;
+    height: 130px;
+    transition: all 0.5;
 
+}
+.dashbaordCardTitle{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: darkgrey;
+    font-weight: bold;
+}
+.dashbaordCardNumber{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.dashStateSection{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 13px;
+}
+.dashCardleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dashStateSectionPercent{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    
 }
