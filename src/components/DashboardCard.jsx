@@ -8,12 +8,13 @@ const DashboardCard = ({title, current, previous, isBearish, data}) => {
     <p className='dashbaordCardTitle' >Total {title}</p>
     <p className='dashbaordCardNumber' >{current}</p>
     <div className='dashStateSection'>
-        <div style={{backgroundColor: isBearish? '#00ff0033' : '#ff000033', color: isBearish? '#00ff00' : 'red',}} className={'dashStateSectionPercent' }> {icon} <p>{32}%</p></div>
-         from {previous}</div>
+        
+         from {previous}
+         </div>
     </div>
 
     <div className="dashCardRight">
-        
+    <div style={{backgroundColor: isBearish? '#00ff0033' : '#ff000033', color: isBearish? '#00ff00' : 'red',}} className={'dashStateSectionPercent' }> {icon} <p>{32}%</p></div>
         </div>
 
    </div>
