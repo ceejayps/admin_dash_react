@@ -2,11 +2,15 @@ import React, { useRef } from "react";
 import { BiLock, BiUser } from "react-icons/bi";
 import { FaLock, FaPersonBooth, FaUser } from "react-icons/fa";
 import "../signIn.css";
+
 const SignIn = () => {
-  const onSubmit = () => {};
+  const onSubmit = (e) => {
+
+  };
 
   const emailRef = useRef();
   const passwordRef = useRef();
+
   return (
     <div className="signInDiv">
       <form className="SignUpForm" onSubmit={onSubmit}>
@@ -43,9 +47,12 @@ const SignIn = () => {
         </div>
 
         <button className="formSubmitButton" type="submit">
-          {" "}
           Sign In
         </button>
+
+        <div className="createAccount">
+          <p>don't have an account? <span>Register</span></p>
+        </div>
       </form>
     </div>
   );
