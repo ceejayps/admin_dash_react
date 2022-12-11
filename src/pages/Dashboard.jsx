@@ -6,10 +6,6 @@ import '../dashboard.css'
 
 
 const Dashboard = () => {
- 
-
-
-
 
   const pageName = "Dashboard"
   const pageIcon = <BsPersonPlus className="pageButtonIcon" />
@@ -18,6 +14,7 @@ const Dashboard = () => {
     <div className="templateBody">
     <div className="headSection">
       <h2 className="pageTitle">{pageName+"s"}</h2>
+  
       <div className="pageButton">
         {pageIcon} <p>Create {"User"}</p>
       </div>
