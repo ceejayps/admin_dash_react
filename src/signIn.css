@@ -1,0 +1,90 @@
+
+
+.signInDiv{
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: bisque;
+
+}
+.formTitleText{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.SignUpForm{
+    padding: 50px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+.SignUpForm>.formInputDiv{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: .1px solid ;
+    gap:10px;
+    align-items: center;
+}
+
+.SignUpForm>.formInputDiv>input{
+    line-height: 35px;
+    background-color: transparent;
+    outline: none;
+    
+}
+.formTitleTextDiv{
+display: flex;
+width: 100%;
+justify-content: center;
+margin-bottom: 30px;
+
+}
+
+.formInputIcons{
+    height: 20px;
+    width: 20px;
+}
+.forgetPasswordButton{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    
+}
+label{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+input{
+    font-size: 14px;
+    font-weight: 100;
+    width: 100%;
+
+}
+
+.formSubmitButton{
+    margin: 0px;
+    width: 100%;
+    background-color: blue;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 100;
+
+}
+
+    
