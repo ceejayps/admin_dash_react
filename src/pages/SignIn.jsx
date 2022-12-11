@@ -3,9 +3,22 @@ import { BiLock, BiUser } from "react-icons/bi";
 import { FaLock, FaPersonBooth, FaUser } from "react-icons/fa";
 import "../signIn.css";
 
-const SignIn = () => {
-  const onSubmit = (e) => {
-
+const SignIn = ({setIsLogedIn}) => {
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    fetch('https://dummyjson.com/auth/login', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    
+    username: 'kminchelle',
+    password: '0lelplR',
+    // expiresInMins: 60, // optional
+  })
+})
+.then(res => res.json())
+.then(console.log,setIsLogedIn(true) );
+  
   };
 
   const emailRef = useRef();
@@ -13,7 +26,7 @@ const SignIn = () => {
 
   return (
     <div className="signInDiv">
-      <form className="SignUpForm" onSubmit={onSubmit}>
+      <form className="SignUpForm" autoComplete="off" onSubmit={onSubmit}>
         <div className="formTitleTextDiv">
           <label htmlFor="LOGIN" className="formTitleText">
             LOGIN
