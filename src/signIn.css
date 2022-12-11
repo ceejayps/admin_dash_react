@@ -8,13 +8,13 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: bisque;
+  background-color: #17181a;
 
 }
 .formTitleText{
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: whitesmoke;
 }
 
 .SignUpForm{
@@ -26,13 +26,13 @@
   
     justify-content: center;
     height: 600px;
-    background-color: white;
+    background-color: #2d2f30;
     border-radius: 20px;
 }
 .SignUpForm>.formInputDiv{
     display: flex;
     margin-bottom: 10px;
-    border-bottom: .1px solid ;
+    border-bottom: .1px solid whitesmoke;
     gap:10px;
     align-items: center;
 }
@@ -41,6 +41,7 @@
     line-height: 35px;
     background-color: transparent;
     outline: none;
+    color: whitesmoke;
     
 }
 .formTitleTextDiv{
@@ -48,14 +49,17 @@ display: flex;
 width: 100%;
 justify-content: center;
 margin-bottom: 30px;
+color: whitesmoke;
 
 }
 
 .formInputIcons{
     height: 20px;
     width: 20px;
+    color: whitesmoke;
 }
 .forgetPasswordButton{
+    margin-bottom: 10px;
     display: flex;
     width: 100%;
     justify-content: right;
@@ -64,19 +68,21 @@ margin-bottom: 30px;
 label{
     font-size: 14px;
     font-weight: 100;
+    color: whitesmoke;
 }
 
 input{
     font-size: 14px;
     font-weight: 100;
     width: 100%;
+    color: whitesmoke;
 
 }
 
 .formSubmitButton{
     margin: 0px;
     width: 100%;
-    background-color: blue;
+    color: whitesmoke;
     height: 50px;
     border-radius: 50px;
     display: flex;
@@ -86,5 +92,36 @@ input{
     font-weight: 100;
 
 }
+.createAccount{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+}
+.createAccount>p>span{
+font-style: italic;
+font-size: larger;
+font-weight: 300;
+color: white;
+}
+
+.createAccount>p>span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  font-style: oblique;
+  color: aliceblue;
+    }
+
+    input,
+input:hover, 
+input:focus, 
+input:active{
+   box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset !important;
+   background-color: transparent;
+}
+
+  
 
     
