@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import './sideBar.css';
 import './navBar.css';
 import './pageTemplate.css'
@@ -13,14 +14,16 @@ import NavBar from './components/NavBar';
 import Post from './pages/Post';
 import SignIn from './pages/SignIn';
 import FourOhFour from './pages/404';
-const isLogedIn = !true;
+
 
 function App() {
+  const [isLogedIn, setIsLogedIn] = useState(!true)
+  const [user, setUser] = useState([])
   
   return isLogedIn? (
     <BrowserRouter>
     <SideBar>
-    <NavBar/>
+    <NavBar user={user}/>
     <Routes>
       <Route path="/" element={<Dashboard/>}  />
       <Route path="/dashboard" element={<Dashboard/>}  />
@@ -34,12 +37,12 @@ function App() {
   ):(
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<SignIn/>}  />
-      <Route path="/dashboard" element={<SignIn/>}  />
-      <Route path="/admins" element={<SignIn/>}  />
-      <Route path="/users" element={<SignIn/>}  />
-      <Route path="/post" element={<SignIn/>}  />
-      <Route path="/products" element={<SignIn/>}  />
+      <Route path="/" element={<SignIn setIsLogedIn={setIsLogedIn}/>}  />
+      <Route path="/dashboard" element={<SignIn setIsLogedIn={setIsLogedIn}/>}  />
+      <Route path="/admins" element={<SignIn setIsLogedIn={setIsLogedIn}/>}  />
+      <Route path="/users" element={<SignIn setIsLogedIn={setIsLogedIn}/>}  />
+      <Route path="/post" element={<SignIn setIsLogedIn={setIsLogedIn}/>}  />
+      <Route path="/products" element={<SignIn setIsLogedIn={setIsLogedIn}/>}  />
       <Route path="*" element={<FourOhFour/>}  />
     </Routes>
   
