@@ -11,9 +11,13 @@ import Products from './pages/Products'
 import SideBar from './components/SideBar';
 import NavBar from './components/NavBar';
 import Post from './pages/Post';
+import SignIn from './pages/SignIn';
+import FourOhFour from './pages/404';
+const isLogedIn = !true;
 
 function App() {
-  return (
+  
+  return isLogedIn? (
     <BrowserRouter>
     <SideBar>
     <NavBar/>
@@ -26,6 +30,19 @@ function App() {
       <Route path="/products" element={<Products/>}  />
     </Routes>
     </SideBar>
+    </BrowserRouter>
+  ):(
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<SignIn/>}  />
+      <Route path="/dashboard" element={<SignIn/>}  />
+      <Route path="/admins" element={<SignIn/>}  />
+      <Route path="/users" element={<SignIn/>}  />
+      <Route path="/post" element={<SignIn/>}  />
+      <Route path="/products" element={<SignIn/>}  />
+      <Route path="*" element={<FourOhFour/>}  />
+    </Routes>
+  
     </BrowserRouter>
   );
 }
